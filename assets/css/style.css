@@ -1,0 +1,249 @@
+/* PAGINA WEB*/
+
+    /* video de fondo */
+
+    video.bg-video {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -200;
+    }
+
+    /* Contenido web */
+
+    .webimage {
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .webimage img{
+        filter: drop-shadow(0px 0px 8px #05051b);
+        width: 500px;
+    }
+
+    .webcontent {
+        background-color: rgb(0,0,0,0.77);
+        padding: 20px 20px 30px 20px;
+        margin: 0 auto;
+        width: 60%;
+        border-radius: 20px 0px 20px 0px;
+        margin-top: 40px;
+        margin-bottom: 120px;
+    }
+
+    .webcontent h1 {
+        color: #c3d4de;
+        font-family: 'Poppins', Arial;
+        font-size: 22px;
+        font-weight: 0;
+    }
+
+    .webcontent details summary {
+        color: #8a969e;
+        font-family: 'Poppins', Arial;
+        font-size: 16px;
+        transition: all 0.2s;
+    }
+
+    .webcontent details summary:hover {
+        color: #cbd0d4;
+    }
+
+    .webcontent details p {
+        margin: 10px 0;
+        margin-left: 20px;
+        color: #707b82;
+        font-family: Arial;
+        font-size: 12px;
+    }
+
+/* barra de navegacion */
+
+.navbar {
+    margin: 0px 0px;
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.navbar_ul1 li {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 8px;
+}
+
+.navbar_ul1 li a{
+    text-decoration: none;
+    font-family: 'Poppins', Arial;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(10, 10, 10);
+    padding: 10px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.navbar_ul2 {
+    display: none;
+}
+
+.navbar_ul1 li a:hover{
+    background-color: rgb(30, 30, 30, 0.2);
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: rgb(12, 12, 12);
+}
+
+footer p {
+    font-size: 12px;
+    font-family: Arial;
+    color: rgb(59, 59, 59);
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer div {
+    padding-top: 100px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+footer div ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+footer div ul li a {
+    text-align: center;
+    display: inline-block;
+    height: 44px;
+}
+
+footer div ul li a img {
+    height: 45px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+/* footer logos */
+
+#fblogo1:hover{
+    background-color: rgb(3, 98, 252);
+}
+
+#twlogo1:hover{
+    background-color: rgb(0, 172, 238);
+}
+
+#iglogo1:hover{
+    background-color: rgb(252, 3, 127);
+}
+
+#ytlogo1:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+#lilogo1:hover{
+    background-color: rgb(14, 118, 168);
+}
+
+/* --------------------MEDIA QUERIES---------------------- */
+
+/*MOBILE*/
+
+@media screen and (max-width: 600px){
+
+    /* footer */
+
+    footer p {
+        font-size: 18px;
+    }
+
+    footer div ul li a img {
+        max-height: 40px;
+        min-height: 30px;
+    }
+
+    footer div ul li a {
+        height: 37px;
+    }
+
+    /* navbar */
+
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar_ul1 li{
+        display: none;
+    }
+
+    .navbar_ul1 a {
+        display: none;
+    }
+
+    .navbar_ul2 {
+        display: contents;
+        width: 100%;
+    }
+
+    .navbar_ul2 li {
+        display: inline-block;
+        padding: 2px;
+        margin: 0px 20px;
+    }
+
+    .navbar_ul2 li a {
+        display: inline-block;
+    }
+
+    .navbar_ul2 li a img {
+        height: 40px;
+    }
+
+    .webimage img {
+        width: 350px;
+    }
+
+    .webcontent {
+        width: 80%;
+    }
+
+    .webcontent details p {
+        font-size: 16px;
+    }
+
+    .webcontent details summary {
+        font-size: 18px;
+    }
+
+}
+
+/* MAYOR RESOLUCION */
+
+@media screen and (min-width: 1200px){
+    .navbar_ul1 li {
+        padding: 10px;
+    }
+
+    .navbar_ul1 li a{
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .webcontent {
+        width: 50%;
+    }
+}
